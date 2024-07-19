@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-direction-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-form-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+}
+
+.login-form-inputs input {
+  width: 20em;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.game-container h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 50px;
+  margin-bottom: 20px;
+  border: 1px, solid, #333;
+  border-radius: 15px;
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.slots-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+.slot {
+  font-size: 2rem;
+  height: 100px;
+  line-height: 100px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.spinning .slot {
+  animation: spin 1s linear infinite;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+.credits {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+}
+
+.transaction-history {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  height: 200px;
+  /* Fixed height */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  font-family: Arial, sans-serif;
+}
+
+.transaction-history h3 {
+  margin-top: 0;
+}
+
+.transaction-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-history li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-history li:last-child {
+  border-bottom: none;
+}
+
+.legend {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.legend ul {
+  list-style-type: none;
+  /* No bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.legend li {
+  padding: 5px 0;
+}
