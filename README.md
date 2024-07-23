@@ -12,7 +12,7 @@ Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
-- [Backend app] (https://github.com/noureldineessam/casino-backend)
+- [Backend app](https://github.com/noureldineessam/casino-backend)
 
 ### Installation
 
